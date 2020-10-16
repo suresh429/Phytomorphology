@@ -75,7 +75,7 @@ public class DashBoardFragment extends Fragment implements DashBoardListAdapter.
         dashBoardModelList.add(new DashBoardModel(getResources().getString(R.string.current_issue_tab)));
         dashBoardModelList.add(new DashBoardModel(getResources().getString(R.string.archive_tab)));
         dashBoardModelList.add(new DashBoardModel(getResources().getString(R.string.submit_manuscript)));
-        dashBoardModelList.add(new DashBoardModel(getResources().getString(R.string.contact_us)));
+       // dashBoardModelList.add(new DashBoardModel(getResources().getString(R.string.contact_us)));
 
         DashBoardListAdapter dashBoardListAdapter = new DashBoardListAdapter(dashBoardModelList, getActivity(), (dashBoardModel, position) -> onItemClick(dashBoardModel, position));
         fragmentDashBoardBinding.recyclerDashBoard.setAdapter(dashBoardListAdapter);
